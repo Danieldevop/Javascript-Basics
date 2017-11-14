@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SetInterval</title>
+</head>
+<body>
+	<h1 id="timer">Han pasado 0 segundos</h1>
+	<button id="cancel">cancel</button>
+	<script type="text/javascript">
+		const $cancel = document.getElementById('cancel')
+		const timer = document.getElementById('timer')
+		let counter = 0
+		const timeout = setInterval(() => {
+			counter++
+			timer.textContent = 'ha pasado ' + counter + ' segundos'
+		}, 1000)
+
+		$cancel.addEventListener('click', () => clearInterval(timeout) )
+	</script>
+</body>
+</html>

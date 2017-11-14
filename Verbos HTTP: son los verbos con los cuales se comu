@@ -1,0 +1,24 @@
+Verbos HTTP: son los verbos con los cuales se comunica el protocolo de transferencia de hipertexto o http, los usamos todos lo días cuando navegamos en la web solo que no los vemos.
+
+verbo: get() 
+
+Obtiene de un servidro remoto una información(como cuando buscas en google)
+
+verbo: post() 
+
+Escribes algo en un servidor remoto(como cuando escribes un comentario en facebook o platzi)
+
+verbo: put() ó patch() 
+
+Permiten editar algo que se encuentra escrito en un servidor remoto(como cuando editas un post erroneo en facebook o un comentario en una red social)
+
+verbo: delete() 
+
+elimina un archivo que se encuentra en el servidor(como cuando eliminas una foto de perfil de facebook)
+
+JSON: ó javascript object notation; no es mas que un diccionario de objetos que devuelve una url cada vez que navegamos por la web.
+
+QUERY: cuando escribimos una pagina web en el buscador como.. 
+	URL: https://google.com/que?es?esto?.#667676
+
+	La parte que dice: que?es?esto?.#667676 => a esto se le llama la QUERY 

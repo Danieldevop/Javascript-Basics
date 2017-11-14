@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizz</title>
+</head>
+<h1 id='texto'></h1>
+<body>
+	<script type="text/javascript">
+		let question = prompt('en que año se realizó el ataque a las torres gemelas') 
+		let result = new Promise((resolve,reject) => {
+			if (question == '2001') {
+				resolve('CORRECTO!!!!!')
+				setTimeout(() => {
+					document.getElementById('texto').innerHTML = 'CORRECTO!!!'
+				},1000)		
+			}
+			else {
+				reject('Incorrecto :(')
+				document.getElementById('texto').innerHTML = 'Incorrecto'
+			}
+		})
+
+		result
+		.then((response) => console.log(response))
+		.catch((response) => console.log(response))
+
+
+	</script>
+</body>
+</html>

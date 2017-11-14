@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Callbacks</title>
+</head>
+<body>
+	<h1 id='agenda'>Estoy Despertando</h1>
+	<script type="text/javascript">
+		const DESPERTAR = 3000
+		const DUCHA = 2000
+		const VESTIRSE = 2000
+		const DESAYUNAR = 3000
+		const STUDY = 5000
+		const $agenda = document.getElementById('agenda')
+		setTimeout(() => {
+			setTimeout(() => {
+				$agenda.textContent = 'Ahora me estoy Duchando'
+				setTimeout(() => {
+					$agenda.textContent = 'Haora me estoy vistiendo'
+					setTimeout(() => {
+						$agenda.textContent ='Estoy Desayunando'
+						setTimeout(() => {
+							$agenda.textContent = 'Estoy estudiando'
+						},STUDY)
+					},DESAYUNAR)
+				},VESTIRSE)
+			},DUCHA)
+		},DESPERTAR)
+	</script>
+</body>
+</html>
