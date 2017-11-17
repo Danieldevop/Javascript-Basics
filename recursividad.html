@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursividad</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var number = parseInt(prompt('Enter a number: '))
+		document.write('The factorial of ' + number + ' is: ' +factorial(number))
+
+		function factorial(number) {
+			if (number < 1) return 1
+
+			return number * factorial(number - 1)
+		}
+
+	</script>
+</body>
+</html>
